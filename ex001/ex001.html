@@ -10,9 +10,15 @@
     <h1>Sal Sicha</h1>
 
     <script>
-        window.alert('Você arrasou')
-        window.confirm('Você é legal')
-        window.prompt('Qual o seu nome?')
+        var nome = window.prompt('Qual o seu nome?')
+        
+        var idade = window.prompt('Qual a sua idade?')
+
+        var altura = window.prompt('Qual a sua altura?')
+
+        window.alert('É um prazer te conhecer, ' + nome + ' , você ainda tem muita vida pela frente, apenas ' + idade + ' anos, para com isso! E você nem é tão baixo, ter ' + altura + ' é muito bom!')
+
+        window.alert(`É um prazer te conhecer ${nome}, você ainda tem muita vida pela frente, apenas ${idade}, para com isso! E você nem é tão baixo, ter ${altura} é muito bom!`)
     </script>
 </body>
 </html>
