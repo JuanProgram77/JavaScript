@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body{
+            background-color: lightgray;
+            font-size: 18px;
+            font-weight: bold;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        p, div{
+            text-indent:30px;
+            line-height:20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Sal Sicha</h1>
+    <p>Ele gosta de comer Hambúrguer!</p>
+    <p>Ele falava espanhol!</p>
+    <div>Ele queria falar inglês!</div>
+
+    <script>
+        var Hambúrguer = window.document.getElementByTagName('p')[1]
+        window.alert = `Opan ${Hambúrguer}`
+    </script>
+</body>
+</html>
