@@ -37,11 +37,29 @@
     <div id="area">Ele queria falar inglês!</div>
 
     <script>   
+        var a = window.document.getElementById('area')
+        a.addEventListener("click", clicar)
+        a.addEventListener("mouseenter", passou)
+        a.addEventListener("mouseout", saiu)
+        a.addEventListener("mousedown", pressionou)
 
-        var p1 = window.document.getElementsByTagName('p')[0]
-        document.write(`<br/> A cervejinha e ${p1.innerText}`)
+    function clicar(){
+        area.innerText = "Clicou"
+        area.style.background = "green"
+    }
 
-        window.alert(p1.innerText)
+    function passou(){
+        area.innerText = "Passou em kk.."
+    }
+
+    function saiu(){
+        area.innerText = "abóbora sô"
+    }
+
+    function pressionou(){
+        area.innerText = "Solte-me"
+        area.style.background = "red"
+    }
 
     </script>
 </body>
