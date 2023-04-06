@@ -5,9 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
+
+<style>
+
+body{
+    font-size:14pt;
+}
+
+input{
+    margin-bottom:20px;
+}
+
+</style>
  <body>
+
 <h1>Aprendendo a mexer com Botões</h1>
-<input type="number" name="tx1" id="tx1"> -
+<input type="number" name="tx1" id="tx1"> *
 <input type="number" name="tx2" id="tx2">
 <input type="button" value="Subtrair" onclick="somar()">
 <div id="result">Resultado</div>
@@ -17,11 +30,11 @@ function somar(){
 
     var tn1 = window.document.querySelector('input#tx1')
     var tn2 = window.document.querySelector('input#tx2')
-    var n1 = Number(tn1.value)
-    var n2 = Number(tn2.value)
-    var sub = n1 - n2
+    var n1 = (tn1.value)
+    var n2 = (tn2.value)
+    var mult = n1 * n2
     var rest = window.document.querySelector('div#result')
-    rest.innerHTML = sub
+    rest.innerHTML = `A multiplicação entre ${n1} e ${n2} é <strong>${mult}</strong> `
 
 }
 
