@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+<style>
+
+body{
+    font-size:14pt;
+}
+
+input{
+    margin-bottom:20px;
+}
+
+input#verificar{
+    width:100px;
+    height:30px;
+    font-weight:bolder;
+    margin-left:10px;
+}
+
+input#vel{
+    width:100px;
+}
+
+p#limite{
+    margin:0px;
+}
+
+</style>
+ <body>
+
+<h1>Aprendendo a mexer com Condições</h1>
+
+Qual foi a sua velocidade? <input type="number" name="vel" id="vel"> Km/h
+
+<input type="button" value="Verificar" onclick="calcular()" id="verificar">
+
+<p id="limite"></p>
+
+<script>
+
+function calcular(){
+    
+var ver = window.document.querySelector("input#vel")
+var verif = Number(ver.value)
+var limite = window.document.querySelector("p#limite")
+
+if (verif > 70){
+    limite.innerHTML = ("Será MULTADO!")
+} else {
+    limite.innerHTML = ("Está LIBERADO!")
+}
+
+}
+</script>
+ </body>
+
+</html>
