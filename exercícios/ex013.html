@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+<style>
+
+
+</style>
+ <body>
+
+<h1>Análise</h1>
+
+Quantos litros de água você bebe p/ dia: <input type="number" name="água" id="água">
+
+<input type="button" value="Verificar" onclick="analisar()">
+
+<div id="resultado"></div>
+
+<script>
+
+function analisar(){
+
+    var água = document.querySelector("input#água")
+    var quantidade = Number(água.value)
+    var result = document.querySelector("div#resultado")
+
+    if (quantidade < 2){
+     result.innerHTML = "Você bebe pouca água!"
+
+    } else if (quantidade < 4){
+        result.innerHTML = "Você bebe uma boa quantidade!"
+
+    } else{
+        result.innerHTML = "Você bebe água demais!"
+
+    }
+}
+
+</script>
+ </body>
+
+</html>
