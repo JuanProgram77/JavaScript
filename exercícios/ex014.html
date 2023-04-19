@@ -14,14 +14,42 @@
 
 <h1>Análise</h1>
 
-<div id="horas"></div>
+<div id="dia da semana"></div>
 
 <script>
 
-var horas = document.querySelector("div#horas")
-var horario = new Date()
-var hour = horario.getHours()
-horas.innerHTML = (`Agora são ${hour} horas`)
+var semana = new Date ()
+var dia = semana.getDay()
+
+var dia_da_semana = document.getElementById("dia da semana")
+
+switch (dia){
+    case 0:
+    dia_da_semana.innerHTML = ("Domingo")
+        break
+    case 1: 
+    dia_da_semana.innerHTML = ("Segunda-feira")
+        break
+    case 2:
+    dia_da_semana.innerHTML = ("Terça-feira")
+        break
+    case 3:
+    dia_da_semana.innerHTML = ("Quarta-feira")
+        break
+    case 4: 
+    dia_da_semana.innerHTML = ("Quinta-feira")
+        break
+    case 5: 
+    dia_da_semana.innerHTML = ("Sexta-feira")
+        break
+    case 6:
+    dia_da_semana.innerHTML = ("Sábado")
+        break
+    default:
+    dia_da_semana.innerHTML = ("{ERRO}")
+        break
+}
+
 
 </script>
  </body>
