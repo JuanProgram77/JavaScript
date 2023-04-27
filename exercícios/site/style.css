@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-color:lightgrey;
+    text-align:center;
+    font: normal normal 16px Arial, sans-serif;
+}
+
+header{
+    padding: 20px;
+}
+
+main{
+    background-color:white;
+    max-width:400px;
+    min-width:300px;
+    margin:auto;
+    height:50vw;
+}
+
+section{
+    position:relative;
+    min-width:400px;
+    height:50vw;
+}
+
+article{
+    position:absolute;
+    background-color:black;
+    width:300px;
+    height:30vw;
+    top:20%;
+    left:12%;
+    border-radius: 150px;
+}
+
+footer{
+    padding:20px;
+    font-weight:bold;
+}

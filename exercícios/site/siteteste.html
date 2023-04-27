@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ <body>
+    <header>
+        <h1 id="titulo"></h1>
+    </header>
+
+    <main>
+        <section>
+            <article id="img">
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>juanPatron</p>
+    </footer>
+
+
+<script>
+var horas = new Date()
+var hora = horas.getHours()
+var horario = document.querySelector("h1#titulo")
+var imagem = document.getElementById("img")
+
+if(hora < 12){
+    horario.innerHTML = (`Agora são ${hora}h da manhã`)
+
+} else if (hora < 18){
+    horario.innerHTML = (`Agora são ${hora}h da tarde`)
+    imagem = url('imagens/tarde.jpg')
+    
+} else{
+    horario.innerHTML = (`Agora são ${hora}h da noite`)
+}
+
+</script>
+ </body>
+
+</html>
