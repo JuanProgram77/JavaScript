@@ -30,16 +30,19 @@ var horas = new Date()
 var hora = horas.getHours()
 var horario = document.querySelector("h1#titulo")
 var imagem = document.getElementById("img")
+var corpo = document.body
 
 if(hora < 12){
     horario.innerHTML = (`Agora são ${hora}h da manhã`)
+    corpo.style.background = "red"
 
 } else if (hora < 18){
     horario.innerHTML = (`Agora são ${hora}h da tarde`)
-    imagem = url('imagens/tarde.jpg')
-    
+    corpo.style.background = "orange"
+
 } else{
     horario.innerHTML = (`Agora são ${hora}h da noite`)
+    corpo.style.background = "black"
 }
 
 </script>
